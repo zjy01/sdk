@@ -101,7 +101,6 @@ body {
 .msg-like {
   padding-top: 0.44444444rem;
   padding-left: 0.43rem;
-  padding-right: 0.43rem;
   border-bottom: 1px solid #e6e6e6;
 }
 .msg-like .like-count {

@@ -36,8 +36,8 @@
       <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.32258">
-              <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+            <state vertical-scroll-proportion="-7.935484">
+              <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -66,8 +66,8 @@
       <file leaf-file-name="sdk.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/less/sdk.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41796875">
-              <caret line="179" column="27" selection-start-line="179" selection-start-column="27" selection-end-line="179" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.24609375">
+              <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -106,14 +106,28 @@
       <file leaf-file-name="msg.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/msg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.645162">
-              <caret line="173" column="30" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="30" />
+            <state vertical-scroll-proportion="-2.967742">
+              <caret line="165" column="3" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/img/location.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clock.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/img/clock.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -142,9 +156,9 @@
         <option value="$PROJECT_DIR$/json/comment.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/js/js.js" />
         <option value="$PROJECT_DIR$/json/like.json" />
         <option value="$PROJECT_DIR$/msg.html" />
+        <option value="$PROJECT_DIR$/src/js/js.js" />
         <option value="$PROJECT_DIR$/src/less/sdk.less" />
       </list>
     </option>
@@ -232,6 +246,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="json" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -260,10 +306,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/json" />
       <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src/less" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -519,14 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.32258">
-          <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json/like.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.354838">
@@ -537,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/msg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.645162">
-          <caret line="173" column="30" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="30" />
+        <state vertical-scroll-proportion="-2.967742">
+          <caret line="165" column="3" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -547,10 +585,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/location.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/clock.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.935484">
+          <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/sdk.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41796875">
-          <caret line="179" column="27" selection-start-line="179" selection-start-column="27" selection-end-line="179" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.24609375">
+          <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
           <folding />
         </state>
       </provider>
