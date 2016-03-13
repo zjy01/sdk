@@ -1,0 +1,187 @@
+@import "px2rem";
+
+@bg-white:#ffffff;
+@bg-fafafa:#fafafa;
+@color-line:#e6e6e6;
+@color-zi: #ff4181;
+
+//布局
+body{
+  font-size:16px;
+  font-family:'Microsoft YaHei','微软雅黑';
+}
+.wrapper{
+  max-width: 640px;
+  margin: 0 auto;
+  .px2rem(padding-bottom,73);
+}
+//封面
+.msg-poster{
+  position: relative;
+  width: 10rem;
+  .px2rem(height,200);
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .msg-cover{
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+  }
+  .msg-title{
+    position: absolute;
+   .px2rem(left,24);
+   .px2rem(bottom,24);
+   .px2rem(font-size,20);
+    color: @bg-white;
+  }
+}
+
+.msg-msg{
+  .px2rem(height,72);
+  background-color: @bg-fafafa;
+  .msg-table{
+    .app-slogan {
+      .msg-time{
+        .px2rem(font-size,12);
+      }
+    }
+  }
+}
+.msg-content{
+  .px2rem(padding-left,16);
+  .px2rem(padding-right,16);
+  .px2rem(padding-top,24);
+  .px2rem(padding-bottom,24);
+  font-size:14px;
+  line-height: 1.5em;
+  background-color: @bg-white;
+  border-bottom: 1px solid @color-line;
+}
+//评论
+.msg-comment{
+  .px2rem(padding-top,16);
+  .comment-box{
+    padding:16px 0.43rem;
+    border-bottom: solid 1px @color-line;
+    table{
+      width: 100%;
+      .user-img-td{
+        width: 56px;
+        .user-img{
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          border-radius: 50%;
+          >img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .user-comment-td{
+        .user-name{
+          color: @color-zi;
+          font-weight: bold;
+        }
+        .comment-time{
+          font-size:12px;
+          color: #999;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  #comment-refresh{
+    overflow: hidden;
+    .px2rem(padding,8);
+    text-align: center;
+    font-size:14px;
+    color: #999;
+    transition: transform 0.3s, height 0.3s;
+    -webkit-transition: -webkit-transform, height 0.3s;
+  }
+}
+.comment-count,.like-count{
+  padding-left: 0.43rem;
+  font-size:14px;
+  color: #666;
+}
+.msg-like{
+  .px2rem(padding-top,16);
+  border-bottom:1px solid @color-line ;
+  .like-person-box{
+    .px2rem(padding-top,16);
+    .px2rem(padding-bottom,16);
+    .px2rem(padding-left,8);
+    .like-person{
+      display: inline-block;
+      margin: 0 8px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+//底部广告
+.bottom-bar{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  background-color: @bg-white;
+  .px2rem(height,72);
+  width: 100%;
+  border-top: 1px @color-line solid;
+}
+
+.app-ad,.msg-table{
+  height: 100%;
+  width: 10rem;
+  margin: 0 auto;
+  .app-img{
+    .px2rem(width,72);
+    >div:first-child{
+      .px2rem(width,40);
+      .px2rem(height,40);
+      .px2rem(margin,16);
+      border-radius: 50%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .app-slogan{
+    >div:nth-child(1){
+      color: #212121;
+      .px2rem(font-size,16);
+    }
+    >div:nth-child(2){
+      color: #999;
+      .px2rem(font-size,14);
+    }
+  }
+  .app-btn{
+    >a:first-child{
+      display: inline-block;
+      background-color: @color-zi;
+      .px2rem(font-size,16);
+      .px2rem(width,128);
+      .px2rem(height,40);
+      .px2rem(line-height,40);
+      .px2rem(border-radius,40);
+      color: @bg-white;
+      box-shadow: 0.05rem 0.05rem 0.3rem  #999;
+    }
+  }
+}
