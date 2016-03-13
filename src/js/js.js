@@ -40,7 +40,6 @@ $(function () {
             $(window).on('scroll', function () {
                 var LFTop= $(window).scrollTop();
                 var RETop= refresh.offset().top;
-                console.log(LFTop);
                 if(self.IFMax){
                     $(window).off("scroll");
                     refresh.text("无更多评论");
