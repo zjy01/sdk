@@ -40,13 +40,6 @@ $(function () {
             $(window).on('scroll', function () {
                 var LFTop= $(window).scrollTop();
                 var RETop= refresh.offset().top;
-                if(self.IFMax){
-                    $(window).off("scroll");
-                    refresh.text("无更多评论");
-                }
-
-                console.log(RETop - LFTop - wh);
-                console.log(!self.fetching);
                 if(RETop - LFTop - wh < 0 ){
                     if(!self.fetching){
                         self.loadMsg(self.start,self.rows);
@@ -61,9 +54,6 @@ $(function () {
                 url: '../json/comment.json',
                 success: function (data) {
                     self.loaded += 5;
-                    if(self.loaded >= data.all){
-                        self.IFMax = true;
-                    }
                     data.msg.forEach(function (value) {
                         var view = {
                             img: value.user['user-img'],
@@ -74,8 +64,13 @@ $(function () {
                         var renderMsg = Mustache.render(self.render,view);
                         $('.comment-area').append($(renderMsg));
                     });
+                    if(self.loaded >= data.all){
+                        $(window).off("scroll");
+                        $("#comment-refresh").text("无更多评论");
+                    }
                 },
                 complete: function () {
+                    console.log('com');
                     self.fetching = false;
                 }
             });
