@@ -65,6 +65,11 @@ body{
 //评论
 .msg-comment{
   .px2rem(padding-top,16);
+  .comment-count{
+    padding-left: 0.43rem;
+    font-size:14px;
+    color: #666;
+  }
   .comment-box{
     padding:16px 0.43rem;
     border-bottom: solid 1px @color-line;
@@ -106,21 +111,21 @@ body{
     -webkit-transition: -webkit-transform, height 0.3s;
   }
 }
-.comment-count,.like-count{
-  padding-left: 0.43rem;
-  font-size:14px;
-  color: #666;
-}
 .msg-like{
   .px2rem(padding-top,16);
+  padding-left: 0.43rem;
+  padding-right: 0.43rem;
   border-bottom:1px solid @color-line ;
+  .like-count{
+    font-size:14px;
+    color: #666;
+  }
   .like-person-box{
     .px2rem(padding-top,16);
     .px2rem(padding-bottom,16);
-    .px2rem(padding-left,8);
     .like-person{
       display: inline-block;
-      margin: 0 8px;
+      margin-right: 16px;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -137,7 +142,7 @@ body{
   position: fixed;
   bottom: 0;
   left:0;
-  background-color: @bg-white;
+  background-color: rgba(255,255,255,0.95);
   .px2rem(height,72);
   width: 100%;
   border-top: 1px @color-line solid;
@@ -172,6 +177,7 @@ body{
   }
   .app-btn{
     >a:first-child{
+      text-decoration: none;
       display: inline-block;
       background-color: @color-zi;
       .px2rem(font-size,16);

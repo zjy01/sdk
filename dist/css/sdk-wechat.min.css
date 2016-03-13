@@ -53,6 +53,11 @@ body {
 .msg-comment {
   padding-top: 0.44444444rem;
 }
+.msg-comment .comment-count {
+  padding-left: 0.43rem;
+  font-size: 14px;
+  color: #666;
+}
 .msg-comment .comment-box {
   padding: 16px 0.43rem;
   border-bottom: solid 1px #e6e6e6;
@@ -93,24 +98,23 @@ body {
   transition: transform 0.3s, height 0.3s, -webkit-transform 0.3s;
   -webkit-transition: -webkit-transform, height 0.3s;
 }
-.comment-count,
-.like-count {
-  padding-left: 0.43rem;
-  font-size: 14px;
-  color: #666;
-}
 .msg-like {
   padding-top: 0.44444444rem;
+  padding-left: 0.43rem;
+  padding-right: 0.43rem;
   border-bottom: 1px solid #e6e6e6;
+}
+.msg-like .like-count {
+  font-size: 14px;
+  color: #666;
 }
 .msg-like .like-person-box {
   padding-top: 0.44444444rem;
   padding-bottom: 0.44444444rem;
-  padding-left: 0.22222222rem;
 }
 .msg-like .like-person-box .like-person {
   display: inline-block;
-  margin: 0 8px;
+  margin-right: 16px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -124,7 +128,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   height: 2rem;
   width: 100%;
   border-top: 1px #e6e6e6 solid;
@@ -163,6 +167,7 @@ body {
 }
 .app-ad .app-btn > a:first-child,
 .msg-table .app-btn > a:first-child {
+  text-decoration: none;
   display: inline-block;
   background-color: #ff4181;
   font-size: 0.44444444rem;
