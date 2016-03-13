@@ -51,7 +51,7 @@ $(function () {
             var self = this;
             self.fetching = true;
             $.ajax({
-                url: '../json/comment.json',
+                url: 'json/comment.json',
                 success: function (data) {
                     self.loaded += 5;
                     data.msg.forEach(function (value) {
