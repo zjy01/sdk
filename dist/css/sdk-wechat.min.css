@@ -1,8 +1,8 @@
 .icon {
   display: inline-block;
-  vertical-align: bottom;
-  width: 0.52777778rem;
-  height: 0.52777778rem;
+  vertical-align: text-bottom;
+  width: 0.5rem;
+  height: 0.5rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -65,19 +65,19 @@ body {
 .activity-header .msg-block {
   position: relative;
   height: 2.44444444rem;
-  padding-left: 0.44444444rem;
-  padding-top: 0.33333333rem;
+  padding: 0.44444444rem;
   color: white;
 }
 .activity-header .msg-block .msg-title {
+  line-height: 1em;
   font-size: 0.55555556rem;
   vertical-align: text-top;
 }
 .activity-header .msg-block .msg-other {
+  line-height: 1em;
   position: absolute;
   bottom: 0.66666667rem;
   font-size: 0.44444444rem;
-  margin-top: 0.19444444rem;
 }
 .activity-header .msg-block .msg-other > div {
   display: inline-block;

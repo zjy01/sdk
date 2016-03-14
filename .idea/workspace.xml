@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4a3e16a-c286-492d-9720-cdc0cefc7e90" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity.html" afterPath="$PROJECT_DIR$/activity.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/sdk-wechat.min.css" afterPath="$PROJECT_DIR$/dist/css/sdk-wechat.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/icon.less" afterPath="$PROJECT_DIR$/src/less/icon.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/sdk.less" afterPath="$PROJECT_DIR$/src/less/sdk.less" />
     </list>
     <ignored path="sdk.iws" />
@@ -41,8 +41,8 @@
       <file leaf-file-name="icon.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/icon.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2580647">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state vertical-scroll-proportion="-2.1290324">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -81,8 +81,8 @@
       <file leaf-file-name="sdk.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/less/sdk.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5703125">
-              <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.484375">
+              <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -189,10 +189,10 @@
         <option value="$PROJECT_DIR$/json/like.json" />
         <option value="$PROJECT_DIR$/src/js/js.js" />
         <option value="$PROJECT_DIR$/src/less/icon.css" />
-        <option value="$PROJECT_DIR$/src/less/icon.less" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/msg.html" />
         <option value="$PROJECT_DIR$/activity.html" />
+        <option value="$PROJECT_DIR$/src/less/icon.less" />
         <option value="$PROJECT_DIR$/src/less/sdk.less" />
       </list>
     </option>
@@ -687,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/icon.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2580647">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json/comment.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7096774">
@@ -725,10 +717,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/icon.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1290324">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/sdk.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5703125">
-          <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.484375">
+          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding />
         </state>
       </provider>
