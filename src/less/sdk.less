@@ -58,13 +58,18 @@ body{
   }
   //活动海报专用
   .msg-block{
+    position: relative;
     .px2rem(height,88);
-    .px2rem(padding,16);
+    .px2rem(padding-left,16);
+    .px2rem(padding-top,12);
     color: white;
     .msg-title{
       .px2rem(font-size,20);
+      vertical-align: text-top;
     }
     .msg-other{
+      position: absolute;
+      .px2rem(bottom,24);
       .px2rem(font-size,16);
       .px2rem(margin-top,7);
       >div{
@@ -79,6 +84,17 @@ body{
 .msg-msg{
   .px2rem(height,72);
   background-color: @bg-fafafa;
+  .msg-table{
+    .app-slogan {
+      .msg-time{
+        .px2rem(font-size,12);
+      }
+    }
+  }
+}
+.activity-msg{
+  .px2rem(height,56);
+  background-color: @bg-white;
   .msg-table{
     .app-slogan {
       .msg-time{

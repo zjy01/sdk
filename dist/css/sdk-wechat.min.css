@@ -63,14 +63,19 @@ body {
   height: 100%;
 }
 .activity-header .msg-block {
+  position: relative;
   height: 2.44444444rem;
-  padding: 0.44444444rem;
+  padding-left: 0.44444444rem;
+  padding-top: 0.33333333rem;
   color: white;
 }
 .activity-header .msg-block .msg-title {
   font-size: 0.55555556rem;
+  vertical-align: text-top;
 }
 .activity-header .msg-block .msg-other {
+  position: absolute;
+  bottom: 0.66666667rem;
   font-size: 0.44444444rem;
   margin-top: 0.19444444rem;
 }
@@ -85,6 +90,13 @@ body {
   background-color: #fafafa;
 }
 .msg-msg .msg-table .app-slogan .msg-time {
+  font-size: 0.33333333rem;
+}
+.activity-msg {
+  height: 1.55555556rem;
+  background-color: #ffffff;
+}
+.activity-msg .msg-table .app-slogan .msg-time {
   font-size: 0.33333333rem;
 }
 .msg-content {
@@ -223,21 +235,6 @@ body {
   border-radius: 1.11111111rem;
   color: #ffffff;
   box-shadow: 0 0.056rem 0.11rem rgba(213, 0, 73, 0.2);
-}
-
-.icon {
-  display: inline-block;
-  vertical-align: bottom;
-  width: 0.52777778rem;
-  height: 0.52777778rem;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.icon-clock {
-  background-image: url("../../src/img/clock.png");
-}
-.icon-location {
-  background-image: url("../../src/img/location.png");
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
