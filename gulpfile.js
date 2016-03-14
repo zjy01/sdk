@@ -52,3 +52,14 @@ gulp.task('html', function () {
     gulp.src(path.html)
         .pipe(reload({ stream:true }));
 });
+//var spriter = require("gulp-spriter");
+//gulp.task("spriter",function(){
+//    return gulp.src("./src/less/icon.less")
+//        .pipe(less())
+//        .pipe(spriter({
+//            sprite:"test.png",
+//            slice:"./src/slice",
+//            outpath:"./build/tests"
+//        }))
+//        .pipe(gulp.dest('./src/less'))
+//})

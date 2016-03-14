@@ -14,16 +14,20 @@ body{
   margin: 0 auto;
   .px2rem(padding-bottom,73);
 }
-//封面
-.msg-poster{
+//资讯封面
+.msg-header{
   position: relative;
-  width: 10rem;
-  .px2rem(height,200);
-  overflow: hidden;
-  img{
-    width: 100%;
-    height: 100%;
+  .msg-poster{
+    width: 10rem;
+    .px2rem(height,200);
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
+
+  //资讯专用
   .msg-cover{
     background: rgba(0,0,0,0.3);
     width: 100%;
@@ -31,16 +35,47 @@ body{
     position: absolute;
     left:0;
     top: 0;
-  }
-  .msg-title{
-    position: absolute;
-   .px2rem(left,24);
-   .px2rem(bottom,24);
-   .px2rem(font-size,20);
-    color: @bg-white;
+    .msg-title{
+      position: absolute;
+      .px2rem(left,24);
+      .px2rem(bottom,24);
+      .px2rem(font-size,20);
+      color: @bg-white;
+    }
   }
 }
-
+//活动封面
+.activity-header{
+  position: relative;
+  .msg-poster{
+    width: 10rem;
+    .px2rem(height,264);
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  //活动海报专用
+  .msg-block{
+    .px2rem(height,88);
+    .px2rem(padding,16);
+    color: white;
+    .msg-title{
+      .px2rem(font-size,20);
+    }
+    .msg-other{
+      .px2rem(font-size,16);
+      .px2rem(margin-top,7);
+      >div{
+        display: inline-block;
+      }
+      .msg-location{
+        .px2rem(margin-left,10);
+      }
+    }
+  }
+}
 .msg-msg{
   .px2rem(height,72);
   background-color: @bg-fafafa;
@@ -52,6 +87,7 @@ body{
     }
   }
 }
+
 .msg-content{
   .px2rem(padding-left,16);
   .px2rem(padding-right,16);
@@ -185,7 +221,7 @@ body{
       .px2rem(line-height,40);
       .px2rem(border-radius,40);
       color: @bg-white;
-      box-shadow: 0.05rem 0.05rem 0.3rem  #999;
+      box-shadow:0 0.056rem 0.11rem rgba(213,0,73,0.2);
     }
   }
 }
