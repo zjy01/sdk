@@ -1,44 +1,24 @@
 {
-  "all":12,
-  "data":[
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    },
-    {
-      "img":"src/img/logo.png"
-    }
-  ]
+  "re": "1",
+  "type": "2010",
+  "data": {
+    "total": "3",
+    "ava": [
+      {
+        "userid": "6",
+        "username": "Java",
+        "headpic": "http://120.24.78.54/suidaokou/Public/Uploads/App/20151029_1955631c6cd39f76.png"
+      },
+      {
+        "userid": "11",
+        "username": "the",
+        "headpic": "http://120.24.78.54/suidaokou/Public/Uploads/App/20151230_234568385be9fc5d.png"
+      },
+      {
+        "userid": "10",
+        "username": "fen",
+        "headpic": "http://120.24.78.54/suidaokou/Public/Uploads/App/20151228_62656811e05a11a9.png"
+      }
+    ]
+  }
 }

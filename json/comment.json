@@ -1,55 +1,57 @@
 {
-  "all":20,
-  "msg":[
-    {
-      "user": {
-        "user-img": "src/img/logo.png",
-        "user-name": "zJY"
+  "re": "1",
+  "type": "2010",
+  "data": {
+    "total": "4",
+    "comment": [
+      {
+        "id": "1",
+        "user_id": "1",
+        "name": "hellos ",
+        "content": "大家一起来！",
+        "comment_ava": "http://120.24.78.54/suidaokou/Public/Uploads/App/20160305_60656dae91a3e7b5.png",
+        "time": "2015-08-29 17:30:30",
+        "quote_name": "",
+        "quote_uid": "",
+        "quote_content": "",
+        "like": "1"
       },
-      "comment": {
-        "content": "这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。",
-        "time": "12/20 12:30"
-      }
-    },
-    {
-      "user": {
-        "user-img": "src/img/logo.png",
-        "user-name": "zJY"
+      {
+        "id": "2",
+        "user_id": "2",
+        "name": "danny",
+        "content": "<p>引用<a style='color:blue'>@hellos </a>：大家一起来！</p>我最快！",
+        "comment_ava": "http://120.24.78.54/suidaokou/Public/Uploads/App/default.png",
+        "time": "2015-08-29 17:40:02",
+        "quote_name": "hellos ",
+        "quote_uid": "1",
+        "quote_content": "大家一起来！",
+        "like": "0"
       },
-      "comment": {
-        "content": "这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。",
-        "time": "12/20 12:30"
-      }
-    },
-    {
-      "user": {
-        "user-img": "src/img/logo.png",
-        "user-name": "zJY"
+      {
+        "id": "65",
+        "user_id": "6",
+        "name": "Java",
+        "content": "<p>引用<a style='color:blue'>@danny</a>：我最快！</p>？？？",
+        "comment_ava": "http://120.24.78.54/suidaokou/Public/Uploads/App/20151029_1955631c6cd39f76.png",
+        "time": "2015-11-06 19:58:28",
+        "quote_name": "danny",
+        "quote_uid": "2",
+        "quote_content": "我最快！",
+        "like": "0"
       },
-      "comment": {
-        "content": "这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。",
-        "time": "12/20 12:30"
+      {
+        "id": "125",
+        "user_id": "1",
+        "name": "hellos ",
+        "content": "<p>引用<a style='color:blue'>@Java</a>：？？？</p>测试",
+        "comment_ava": "http://120.24.78.54/suidaokou/Public/Uploads/App/20160305_60656dae91a3e7b5.png",
+        "time": "2015-12-04 14:37:26",
+        "quote_name": "Java",
+        "quote_uid": "6",
+        "quote_content": "？？？",
+        "like": "0"
       }
-    },
-    {
-      "user": {
-        "user-img": "src/img/logo.png",
-        "user-name": "zJY"
-      },
-      "comment": {
-        "content": "这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。",
-        "time": "12/20 12:30"
-      }
-    },
-    {
-      "user": {
-        "user-img": "src/img/logo.png",
-        "user-name": "zJY"
-      },
-      "comment": {
-        "content": "这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。这是评论，我还不知道说什么好。",
-        "time": "12/20 12:30"
-      }
-    }
-  ]
+    ]
+  }
 }

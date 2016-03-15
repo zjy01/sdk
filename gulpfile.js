@@ -12,20 +12,20 @@ var gulp = require("gulp"),
 
 
 var path = {
-    less:['src/less/*.less','src/less/*.css'],
-    js: ['src/js/zepto.js','src/js/mustache.min.js','src/js/js.js'],
-    html : '*.html'
+    less: ['src/less/*.less', 'src/less/*.css'],
+    js: ['src/js/zepto.js', 'src/js/mustache.min.js', 'src/js/js.js'],
+    html: '*.html'
 };
 
-gulp.task('default', function(){
+gulp.task('default', function () {
     browserSync({
         server: {
             baseDir: './'
         }
     });
-    gulp.watch(path.less[0],['less']);
-    gulp.watch(path.js,['js']);
-    gulp.watch(path.html,['html']);
+    gulp.watch(path.less[0], ['less']);
+    gulp.watch(path.js, ['js']);
+    gulp.watch(path.html, ['html']);
 });
 
 gulp.task('less', function () {
@@ -37,7 +37,7 @@ gulp.task('less', function () {
         }))
         .pipe(concat('sdk-wechat.min.css'))
         .pipe(gulp.dest('./dist/css/'))
-        .pipe(reload({ stream:true }));
+        .pipe(reload({stream: true}));
 });
 
 
@@ -45,21 +45,47 @@ gulp.task('js', function () {
     gulp.src(path.js)
         .pipe(concat('sdk-wechat.min.js'))
         .pipe(gulp.dest('dist/js/'))
-        .pipe(reload({ stream:true }));
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('html', function () {
     gulp.src(path.html)
-        .pipe(reload({ stream:true }));
+        .pipe(reload({stream: true}));
 });
 //var spriter = require("gulp-spriter");
-//gulp.task("spriter",function(){
-//    return gulp.src("./src/less/icon.less")
-//        .pipe(less())
-//        .pipe(spriter({
-//            sprite:"test.png",
-//            slice:"./src/slice",
-//            outpath:"./build/tests"
-//        }))
-//        .pipe(gulp.dest('./src/less'))
-//})
+var spriter = require('gulp-css-spriter');
+gulp.task("spriter", function () {
+    var timestamp = +new Date();
+    return gulp.src("./src/less/icon.less")
+        .pipe(less())
+        .pipe(spriter({
+            // 生成的spriter的位置
+            'spriteSheet': './dist/img/sprite' + timestamp + '.png',
+            // 生成样式文件图片引用地址的路径
+            // 如下将生产：backgound:url(../images/sprite20324232.png)
+            'pathToSpriteSheetFromCSS': '../img/sprite' + timestamp + '.png'
+        }))
+        .pipe(gulp.dest('./src/less'))
+})
+
+
+gulp.task('test', function () {
+    gulp.src('test/less.less')
+        .pipe(less())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('./test/'))
+});
+
+gulp.task('minify-css', function () {
+   gulp.src('dist/css/*.css')
+    .pipe(cssMinify())
+    .pipe(gulp.dest("dist/css/"))
+});
+gulp.task('uglify-js', function () {
+   gulp.src('dist/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest("dist/js/"))
+});
