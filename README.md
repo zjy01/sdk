@@ -1,7 +1,7 @@
 # sdk
 ## 生产环境所需
-> 资源目录 dist  
-> msg.html 资讯页  
+> dist          资源目录  
+> msg.html      资讯页  
 > activity.html 活动页  
 
 ## 开发环境所需
