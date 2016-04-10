@@ -89,7 +89,7 @@ $(function () {
                     $('.comment-area').append($(renderMsg));
                     if (self.loaded >= data.total) {
                         $(window).off("scroll");
-                        $("#comment-refresh").text("无更多评论");
+                        $("#comment-refresh").text("到底了~");
                     }
                 },
                 complete: function () {
