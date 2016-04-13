@@ -5,6 +5,7 @@
 @color-line:#e6e6e6;
 @color-zi: #ff4181;
 @color-f2: #f2f2f2;
+@color-999: #999999;
 //布局
 body{
   font-size:16px;
@@ -248,14 +249,19 @@ body{
 .activity-list-box{
   .px2rem(padding,8);
 
-  .activity-time{
-    color: #212121;
+  .activity-time-title{
+    color: #515151;
     .px2rem(font-size,16);
     .px2rem(margin,8);
   }
   .activity-item{
+    display: block;
+    text-decoration: none;
     .px2rem(height,136);
     background: #fff;
+    .px2rem(border-radius,2);
+    .px2rem(margin-bottom,8);
+    overflow: hidden;
 
     .activity-poster{
       .px2rem(width,96);
@@ -266,15 +272,103 @@ body{
       }
     }
     .activity-msg{
+      position: relative;
       .px2rem(width,176);
       height: 100%;
       border-right: 1px solid @color-f2;
+      .px2rem(padding-left,16);
+
+      .activity-title{
+        font-family:"Adobe 黑体 Std R";
+        .px2rem(font-size,16);
+        .px2rem(margin-top,16);
+        color: #212121;
+      }
+
+      .activity-dept{
+        line-height: 1em;
+        .px2rem(margin-top, 8);
+        color: @color-999;
+        .px2rem(font-size,14);
+      }
+      .activity-location{
+        line-height: 1em;
+        .px2rem(margin-top, 8);
+        color: @color-999;
+        .px2rem(font-size,14);
+        .glyphicon{
+          color: #3655e4;
+        }
+      }
+      .activity-attention{
+        color: @color-999;
+        line-height: 1em;
+        position: absolute;
+        .px2rem(font-size,14);
+        .px2rem(bottom,16);
+        .px2rem(left,16);
+
+        .glyphicon{
+          .px2rem(margin-left,2);
+        }
+        .glyphicon-comment{
+          .px2rem(margin-left,16);
+        }
+      }
     }
     .activity-time{
+      position: relative;
       height: 100%;
       .px2rem(width,72);
+      text-align: center;
+
+      .status{
+        .px2rem(height,24);
+        .px2rem(font-size,12);
+        color: white;
+        .px2rem(line-height,24);
+      }
+      .none{
+        background-color: transparent;
+      }
+      .doing{
+        background-color: #ff4080;
+      }
+      .did{
+        background-color: @color-999;
+      }
+
+      .time{
+        position: absolute;
+        width: 100%;
+        .px2rem(top,44);
+        color: #ff9900;
+        .day{
+          line-height: 1em;
+          .px2rem(font-size,30);
+        }
+
+        .clock{
+          line-height: 1em;
+          .px2rem(font-size,14);
+          .px2rem(margin-top,10);
+        }
+      }
     }
   }
+}
+.activity-more{
+  text-align: center;
+  .px2rem(height,24);
+  .px2rem(width,100);
+  .px2rem(font-size,12);
+  background: #fff;
+  color: #999;
+  .px2rem(line-height,24);
+  .px2rem(border-radius,2);
+  margin: 0 auto;
+  .px2rem(margin-bottom,5);
+  box-shadow: 0 0.05rem 0.2rem  rgba(153,153,153,0.3);;
 }
 
 //底部广告

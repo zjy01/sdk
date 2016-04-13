@@ -13,16 +13,17 @@ var gulp = require("gulp"),
 
 var path = {
     less: ['src/less/*.less', 'src/less/*.css'],
-    js: ['src/js/zepto.js', 'src/js/mustache.min.js', 'src/js/js.js'],
+    js1: ['src/js/zepto.js', 'src/js/mustache.min.js', 'src/js/js.js'],
+    js: ['src/js/zepto.js', 'src/js/mustache.min.js', 'src/js/index.js'],
     html: '*.html'
 };
 
 gulp.task('default', function () {
-    browserSync({
-        server: {
-            baseDir: './'
-        }
-    });
+    //browserSync({
+    //    server: {
+    //        baseDir: './'
+    //    }
+    //});
     gulp.watch(path.less[0], ['less']);
     gulp.watch(path.js, ['js']);
     gulp.watch(path.html, ['html']);
@@ -41,9 +42,16 @@ gulp.task('less', function () {
 });
 
 
+//gulp.task('js', function () {
+//    gulp.src(path.js)
+//        .pipe(concat('sdk-wechat.min.js'))
+//        .pipe(gulp.dest('dist/js/'))
+//        .pipe(reload({stream: true}));
+//});
+
 gulp.task('js', function () {
     gulp.src(path.js)
-        .pipe(concat('sdk-wechat.min.js'))
+        .pipe(concat('sdk-wechat-index.min.js'))
         .pipe(gulp.dest('dist/js/'))
         .pipe(reload({stream: true}));
 });
