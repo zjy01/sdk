@@ -73,6 +73,7 @@ var msg = {
                 "start": self.loaded,
                 "rows": self.load_rows
             },
+            dataType: 'json',
             success: function (data) {
                 if (!data.data) return false;
                 data = data.data;
@@ -112,6 +113,7 @@ var msg = {
                 "id": self.id,
                 num: num
             },
+            dataType: 'json',
             success: function (data) {
                 if (!data.data) return false;
                 data = data.data;
