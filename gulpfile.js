@@ -26,6 +26,7 @@ gulp.task('default', function () {
     //});
     gulp.watch(path.less[0], ['less']);
     gulp.watch(path.js, ['js']);
+    gulp.watch(path.js1, ['js1']);
     gulp.watch(path.html, ['html']);
 });
 
@@ -42,12 +43,12 @@ gulp.task('less', function () {
 });
 
 
-//gulp.task('js', function () {
-//    gulp.src(path.js)
-//        .pipe(concat('sdk-wechat.min.js'))
-//        .pipe(gulp.dest('dist/js/'))
-//        .pipe(reload({stream: true}));
-//});
+gulp.task('js1', function () {
+    gulp.src(path.js1)
+        .pipe(concat('sdk-wechat.min.js'))
+        .pipe(gulp.dest('dist/js/'))
+        .pipe(reload({stream: true}));
+});
 
 gulp.task('js', function () {
     gulp.src(path.js)
