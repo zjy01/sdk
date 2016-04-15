@@ -81,7 +81,9 @@ $(function () {
                         '</div>' +
                         '</div>' +
                         '</a>';
-                        var st = new Date(data.activity[0].activity_start_time);
+
+                        var st = new Date(Date.parse(data.activity[0].activity_start_time.replace(/-/g,"/")));
+
                         var sm = st.getMonth() + 1;
 
                         var sd = st.getDate();
@@ -103,7 +105,7 @@ $(function () {
                         var re = Mustache.render(htpl, pa);
                         $(".activity-index-header").html(re);
                     }
-                    if(data.activity.length > self.row){
+                    if(data.activity.length < self.row){
                         $(".activity-more").off('click').text('到底了~');
                     }
                     self.build(data.activity);
@@ -119,8 +121,10 @@ $(function () {
             var tpl = '<div>';
             data.forEach(function (value, index) {
                 var ct = new Date();
-                var st = new Date(value.activity_start_time);
-                var et = new Date(value.activity_end_time);
+
+                var st = new Date(Date.parse(value.activity_start_time.replace(/-/g,"/")));
+                var et = new Date(Date.parse(value.activity_end_time.replace(/-/g,"/")));
+
                 var sm = st.getMonth() + 1;
 
                 var sd = st.getDate();

@@ -126,7 +126,7 @@ var msg = {
                     rn = data.total;
                 } else {
                     rn = num - 1;
-                    renderDot = '<div class="like-person like-dot">' +
+                    renderDot = '<div class="like-person like-dot"> ' +
                         '</div>';
                 }
                 for (var i = 0; i < rn; i++) {
@@ -146,7 +146,6 @@ var msg = {
     getPar: function (par) {
         //获取当前URL
         var local_url = location.href;
-        //var local_url = 'http://sdk.mygdufs.com/index.php/Wechat/Index/activity/id/70.html';
         //获取要取得的get参数位置
         var get = local_url.indexOf(par + "=");
         if (get == -1) {

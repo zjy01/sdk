@@ -19,11 +19,11 @@ var path = {
 };
 
 gulp.task('default', function () {
-    //browserSync({
-    //    server: {
-    //        baseDir: './'
-    //    }
-    //});
+    browserSync({
+        server: {
+            baseDir: './'
+        }
+    });
     gulp.watch(path.less[0], ['less']);
     gulp.watch(path.js, ['js']);
     gulp.watch(path.js1, ['js1']);
